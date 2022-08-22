@@ -1,0 +1,12 @@
+.communication__data {
+  display: flex;
+  align-items: center;
+}
+
+.communication__envelope {
+  @extend %commun-icon;
+}
+
+.communication__smartphone {
+  @extend %commun-icon;
+}

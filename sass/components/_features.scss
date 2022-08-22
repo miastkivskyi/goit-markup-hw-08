@@ -1,0 +1,44 @@
+.section-sample {
+  @extend %position-section;
+}
+
+.features {
+  @extend %container;
+  padding-top: 94px;
+}
+
+.features__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+.features__bckg {
+  background: $button-basis;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin: 0px;
+  margin-bottom: 30px;
+  @extend %flex;
+}
+
+.features__icon {
+  display: block;
+}
+.features__title {
+  color: $section-title-color;
+  @extend %font-medium;
+  @extend %text-margin;
+  margin-bottom: 10px;
+}
+
+.features__rubric {
+  @extend %font-text;
+  @extend %text-margin;
+  color: $primary-text-color;
+}

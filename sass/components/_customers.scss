@@ -1,0 +1,40 @@
+.customers {
+  @extend %container;
+  @extend %position-section;
+}
+.customers__title {
+  color: $title-text-color;
+  @extend %font-title;
+  @extend %text-margin;
+  margin-bottom: 50px;
+}
+
+.customers__list {
+  display: flex;
+  gap: 30px;
+  @extend %list;
+}
+
+.customers__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-color: $color-lotypes;
+  color: $color-lotypes;
+  border-radius: 4px;
+  background-position: center;
+  transition-property: color, border-color;
+  @extend %flex;
+  @extend %animation;
+  &:focus {
+    color: $logo-color;
+    border-color: $logo-color;
+  }
+  &:hover {
+    color: $logo-color;
+    border-color: $logo-color;
+  }
+}
+.customers__icon {
+  fill: currentColor;
+}

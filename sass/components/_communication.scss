@@ -1,0 +1,27 @@
+.communication {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  @extend %list;
+}
+.communication__item:first-child {
+  margin-right: 50px;
+}
+.communication__data {
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  @extend %animation;
+  &:hover {
+    color: $logo-color;
+  }
+  &:focus {
+    color: $logo-color;
+  }
+}

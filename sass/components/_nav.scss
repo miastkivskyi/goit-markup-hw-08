@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  margin-left: 93px;
+  @extend %list;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  color: $section-title-color;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition-property: color;
+  @extend %animation;
+
+  &:hover {
+    color: $logo-color;
+  }
+  &:focus {
+    color: $logo-color;
+  }
+}
+
+.current {
+  color: $logo-color;
+}

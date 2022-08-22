@@ -1,0 +1,161 @@
+.footer {
+  background: $background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__content {
+  display: flex;
+  align-items: baseline;
+  @extend %container;
+}
+
+.footer__nav {
+  width: 231px;
+}
+
+.footer__color {
+  @extend %font-logo;
+  color: $logo-color;
+}
+
+.footer__studio {
+  color: $primary-white-color;
+}
+.footer__logo {
+  @extend %font-logo;
+  color: $title-text-color;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer__list {
+  @extend %list;
+}
+
+.footer__data {
+  color: $primary-text-color;
+  text-decoration: none;
+  transition-property: color;
+  @extend %animation;
+  @extend %font-text;
+  &:focus {
+    color: $logo-color;
+  }
+  &:hover {
+    color: $logo-color;
+  }
+}
+.footer__local {
+  color: $primary-white-color;
+  text-decoration: none;
+  @extend %font-text;
+  transition-property: color;
+  @extend %animation;
+  &:focus {
+    color: $logo-color;
+  }
+  &:hover {
+    color: $logo-color;
+  }
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.join {
+  margin-left: 70px;
+}
+
+.join__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+  @extend %font-medium;
+}
+
+.join__list {
+  display: flex;
+  gap: 10px;
+  @extend %list;
+}
+
+.join__link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  @extend %flex;
+  background-color: $footer-icon-bckg;
+  transition-property: background-color;
+  @extend %animation;
+  &:hover {
+    background-color: $logo-color;
+  }
+  &:focus {
+    background-color: $logo-color;
+  }
+}
+.join__icon {
+  fill: currentColor;
+}
+.join__icon {
+  color: $primary-white-color;
+  transition-property: color;
+  @extend %animation;
+  &:hover {
+    color: $primary-white-color;
+  }
+  &:focus {
+    color: $primary-white-color;
+  }
+}
+.sign {
+  margin-left: 93px;
+}
+
+.sign__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+  @extend %font-medium;
+}
+.sign__form {
+  display: flex;
+}
+
+.sign__email {
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid $border-input-footer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $background-color;
+  color: $primary-text-color;
+}
+
+.sign__button {
+  display: flex;
+  align-items: center;
+  color: $primary-white-color;
+  background-color: $button-back-color;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px $shadow-color;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  cursor: pointer;
+}
+.sign__icon {
+  fill: currentColor;
+  color: $primary-white-color;
+  margin-left: 10px;
+}

@@ -1,0 +1,215 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: $background-color-madal;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $primary-white-color;
+  border: 1px solid $border-button-modal;
+  border-radius: 50%;
+  @extend %animation;
+  cursor: pointer;
+  &:hover {
+    color: $logo-color;
+  }
+  &:focus {
+    color: $logo-color;
+  }
+}
+.modal__icon {
+  fill: currentColor;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $section-title-color;
+  margin: 0 0 12px 0;
+}
+
+.form {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+}
+.position {
+  position: relative;
+}
+.position__input {
+  border: 1px solid $border-input;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+  width: 448px;
+  cursor: pointer;
+  outline: none;
+  transition-property: border-color;
+  @extend %animation;
+  &:focus {
+    border-color: $logo-color;
+  }
+  &:focus + .position__icon {
+    fill: $logo-color;
+  }
+}
+.position__icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  margin-right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition-property: fill;
+  @extend %animation;
+}
+
+.response {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.response__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+}
+
+.response__area {
+  height: 120px;
+  width: 448px;
+  resize: none;
+  border: 1px solid $border-input;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  outline: none;
+  transition-property: border-color;
+  @extend %animation;
+  &:focus {
+    border-color: $logo-color;
+  }
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $color-placeholder;
+}
+
+.check {
+  @extend %flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.check__agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  &:checked + .check__icon {
+    background-color: $logo-color;
+    border-color: $logo-color;
+    background-image: url(../images/other-pictures/mark.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.check__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $section-title-color;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.check__contract {
+  color: $logo-color;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.btn-sending {
+  display: block;
+  align-items: center;
+  color: $primary-white-color;
+  background-color: $button-back-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px $shadow-color;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  padding: 10px 32px 10px 28px;
+  @extend %animation;
+  margin: 30px auto 0;
+}

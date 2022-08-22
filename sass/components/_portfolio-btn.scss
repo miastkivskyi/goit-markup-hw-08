@@ -1,0 +1,50 @@
+.portfolio {
+  @extend %container;
+}
+.portfolio__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.datalist {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  @extend %list;
+}
+.datalist__item:not(:last-child) {
+  margin-right: 8px;
+}
+.datalist__button {
+  display: inline-block;
+  @extend %font-btn;
+  color: $section-title-color;
+  background-color: $button-basis;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  text-align: center;
+  transition-property: background-color, box-shadow, color;
+  @extend %animation;
+  &:focus {
+    color: $primary-white-color;
+    background-color: $logo-color;
+    box-shadow: $btn-portfolio-shadow;
+    border-radius: 4px;
+  }
+  &:hover {
+    color: $primary-white-color;
+    background-color: $logo-color;
+    box-shadow: $btn-portfolio-shadow;
+    border-radius: 4px;
+  }
+}

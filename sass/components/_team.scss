@@ -1,0 +1,90 @@
+.section-team {
+  background-color: $button-basis;
+  @extend %position-section;
+}
+
+.team {
+  @extend %container;
+}
+.team__title {
+  color: $section-title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  @extend %text-margin;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  @extend %list;
+}
+.team__employees {
+  box-shadow: $empoyees-shadow;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__employees:not(:last-child) {
+  margin-right: 30px;
+}
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.staff {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $primary-white-color;
+}
+.staff__name {
+  color: $section-title-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-right: 0;
+  margin-bottom: 10px;
+  @extend %text-margin;
+}
+
+.staff__profession {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  @extend %text-margin;
+}
+
+.network {
+  @extend %flex;
+  gap: 10px;
+  text-decoration: none;
+  @extend %list;
+}
+
+.network__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @extend %flex;
+  color: $color-link;
+  transition-property: background-color, color;
+  @extend %animation;
+  &:hover {
+    color: $primary-white-color;
+    background-color: $logo-color;
+  }
+}
+.network__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}

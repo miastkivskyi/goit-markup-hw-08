@@ -1,0 +1,36 @@
+.examples {
+  @extend %container;
+  @extend %position-section;
+}
+.examples__title {
+  color: $section-title-color;
+  @extend %font-title;
+  @extend %text-margin;
+  margin-bottom: 50px;
+}
+
+.examples__list {
+  display: flex;
+  @extend %list;
+}
+.examples__img:not(:last-child) {
+  margin-right: 30px;
+}
+.thumb {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb__signature {
+  @extend %font-medium;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  color: $primary-white-color;
+  background-color: $thumb-color;
+  @extend %text-margin;
+  @extend %flex;
+}
