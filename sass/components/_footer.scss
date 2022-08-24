@@ -2,11 +2,11 @@
   background: $background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 .footer__content {
   display: flex;
   @media screen and (max-width: 1199px) {
-    width: 480px;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: auto;
@@ -42,22 +42,22 @@
   @extend %font-logo;
   color: $title-text-color;
   text-decoration: none;
-  @media screen and (max-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (max-width: 1200px) {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 .footer__list {
   @extend %list;
-  margin-top: 20px;
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -75,6 +75,8 @@
   }
 }
 .footer__local {
+  display: inline-block;
+  margin-top: 20px;
   color: $primary-white-color;
   text-decoration: none;
   @extend %font-text;
@@ -92,7 +94,7 @@
   margin-bottom: 9px;
 }
 .join {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     margin-left: 137px;
     margin-right: 137px;
   }
@@ -103,7 +105,7 @@
   margin-bottom: 20px;
   color: $primary-white-color;
   @extend %font-medium;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
   }
@@ -146,7 +148,7 @@
 }
 .sign {
   margin-left: 93px;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -170,7 +172,7 @@
 }
 
 .sign__email {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -179,9 +181,10 @@
   border-radius: 4px;
   background-color: $background-color;
   color: $primary-text-color;
-  @media screen and (max-width: 480px) {
-    width: 450px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    width: 358px;
   }
 }
 

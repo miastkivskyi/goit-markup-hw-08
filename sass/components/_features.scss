@@ -3,13 +3,11 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 480px) {
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-top: 94px;
@@ -52,17 +50,16 @@
   @extend %font-medium;
   @extend %text-margin;
   margin-bottom: 10px;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .features__rubric {
   @extend %font-text;
   @extend %text-margin;
   color: $primary-text-color;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
   }
 }
