@@ -5,8 +5,19 @@
 }
 .footer__content {
   display: flex;
-  align-items: baseline;
   @extend %container;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 .footer__nav {

@@ -4,7 +4,16 @@
 }
 
 .team {
-  @extend %container;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .team__title {
   color: $section-title-color;
@@ -24,10 +33,20 @@
 .team__employees {
   box-shadow: $empoyees-shadow;
   border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .team__employees:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 .team__photo {
   display: block;

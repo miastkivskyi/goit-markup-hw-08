@@ -1,6 +1,10 @@
 .examples {
   @extend %container;
   @extend %position-section;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .examples__title {
   color: $section-title-color;

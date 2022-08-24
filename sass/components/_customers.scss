@@ -1,22 +1,36 @@
 .customers {
   @extend %container;
   @extend %position-section;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
+
 .customers__title {
   color: $title-text-color;
   @extend %font-title;
   @extend %text-margin;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .customers__list {
   display: flex;
   gap: 30px;
   @extend %list;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .customers__link {
-  width: 170px;
   height: 92px;
   border: 1px solid;
   border-color: $color-lotypes;
@@ -33,6 +47,12 @@
   &:hover {
     color: $logo-color;
     border-color: $logo-color;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 .customers__icon {

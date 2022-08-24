@@ -1,3 +1,7 @@
+.section-sample {
+  @extend %position-section;
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
