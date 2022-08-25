@@ -1,5 +1,12 @@
 .portfolio {
-  @extend %container;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio__title {
   position: absolute;
@@ -15,14 +22,21 @@
 }
 
 .datalist {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  margin-bottom: 40px;
   @extend %list;
+  @media screen and (max-width: 767px) {
+    row-gap: 15px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
-.datalist__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 .datalist__button {
   display: inline-block;
   @extend %font-btn;

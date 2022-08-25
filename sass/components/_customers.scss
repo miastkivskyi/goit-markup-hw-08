@@ -1,18 +1,17 @@
 .customers {
-  @extend %position-section;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-bottom: 94px;
+    margin-top: 94px;
   }
 }
 
@@ -28,15 +27,24 @@
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   @extend %list;
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.customers__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 5 * 30px) / 6);
   }
 }
 
 .customers__link {
-  width: 210px;
   height: 92px;
   border: 1px solid;
   border-color: $color-lotypes;
@@ -54,10 +62,8 @@
     color: $logo-color;
     border-color: $logo-color;
   }
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 }
+
 .customers__icon {
   fill: currentColor;
 }
