@@ -24,10 +24,6 @@
 }
 
 .footer__nav {
-  width: 231px;
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
 }
 
 .footer__color {
@@ -53,8 +49,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
+    width: 231px;
     display: block;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -94,9 +93,19 @@
   margin-bottom: 9px;
 }
 .join {
-  @media screen and (min-width: 480px) {
-    margin-left: 137px;
-    margin-right: 137px;
+  margin-left: 137px;
+  margin-right: 137px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 0px;
   }
 }
 
@@ -147,13 +156,18 @@
   }
 }
 .sign {
-  margin-left: 93px;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-left: 0px;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    margin-left: 93px;
+    margin-top: 0;
+    flex-direction: row;
   }
 }
 
@@ -165,14 +179,17 @@
 }
 .sign__form {
   display: flex;
-  @media screen and (max-width: 480px) {
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
 .sign__email {
-  width: 100%;
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -189,11 +206,15 @@
 }
 
 .sign__button {
+  width: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   color: $primary-white-color;
   background-color: $button-back-color;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -202,12 +223,9 @@
   box-shadow: 0px 4px 4px $shadow-color;
   border-radius: 4px;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  justify-content: center;
   cursor: pointer;
-  @media screen and (max-width: 480px) {
-    margin-left: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 .sign__icon {
