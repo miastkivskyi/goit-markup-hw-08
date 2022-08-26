@@ -6,21 +6,21 @@
 }
 .footer__content {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  @media screen and (max-width: 1199px) {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     align-items: baseline;
+    flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     justify-content: center;
     align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
   }
 }
 
@@ -91,6 +91,7 @@
   margin-bottom: 9px;
 }
 .join {
+  width: 206px;
   margin-left: 137px;
   margin-right: 137px;
   display: flex;
@@ -203,7 +204,6 @@
   background-color: $background-color;
   color: $primary-text-color;
   margin-bottom: 20px;
-  width: calc(100% - 30px);
   @media screen and (min-width: 768px) {
     width: 450px;
   }

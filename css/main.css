@@ -1020,21 +1020,30 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1046,8 +1055,10 @@ textarea::placeholder {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1135,6 +1146,7 @@ textarea::placeholder {
 }
 
 .join {
+  width: 206px;
   margin-left: 137px;
   margin-right: 137px;
   display: -webkit-box;
@@ -1307,7 +1319,6 @@ textarea::placeholder {
   background-color: #2f303a;
   color: #757575;
   margin-bottom: 20px;
-  width: calc(100% - 30px);
 }
 @media screen and (min-width: 768px) {
   .sign__email {
