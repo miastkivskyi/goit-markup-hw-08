@@ -1180,7 +1180,7 @@ textarea::placeholder {
   margin-bottom: 20px;
   color: #ffffff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .join__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1230,6 +1230,7 @@ textarea::placeholder {
 }
 
 .sign {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1269,6 +1270,7 @@ textarea::placeholder {
 }
 
 .sign__form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1294,7 +1296,7 @@ textarea::placeholder {
 }
 
 .sign__email {
-  width: 450px;
+  width: calc(100% - 30px);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -1305,6 +1307,12 @@ textarea::placeholder {
   background-color: #2f303a;
   color: #757575;
   margin-bottom: 20px;
+  width: calc(100% - 30px);
+}
+@media screen and (min-width: 768px) {
+  .sign__email {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sign__email {

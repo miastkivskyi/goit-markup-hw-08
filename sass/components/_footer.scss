@@ -116,7 +116,7 @@
   margin-bottom: 20px;
   color: $primary-white-color;
   @extend %font-medium;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
   }
@@ -158,6 +158,7 @@
   }
 }
 .sign {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,6 +181,7 @@
   @extend %font-medium;
 }
 .sign__form {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -191,7 +193,7 @@
 }
 
 .sign__email {
-  width: 450px;
+  width: calc(100% - 30px);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -201,6 +203,10 @@
   background-color: $background-color;
   color: $primary-text-color;
   margin-bottom: 20px;
+  width: calc(100% - 30px);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
     width: 358px;
