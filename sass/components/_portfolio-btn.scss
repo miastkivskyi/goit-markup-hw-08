@@ -26,8 +26,9 @@
   flex-wrap: wrap;
   column-gap: 8px;
   margin-bottom: 40px;
+  row-gap: 15px;
   @extend %list;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     row-gap: 15px;
     justify-content: center;
   }
