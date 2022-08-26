@@ -1020,6 +1020,8 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (max-width: 1199px) {
   .footer__content {
@@ -1030,6 +1032,9 @@ textarea::placeholder {
             justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1043,8 +1048,6 @@ textarea::placeholder {
             align-items: baseline;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -1146,6 +1149,12 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-right: 0px;
+    margin-left: 165px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .join {
