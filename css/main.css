@@ -658,7 +658,6 @@ textarea::placeholder {
   padding-right: 15px;
   margin-top: 60px;
   margin-bottom: 60px;
-  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .features {
