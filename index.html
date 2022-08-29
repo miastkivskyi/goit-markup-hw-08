@@ -54,79 +54,92 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-button is-open">
+          <svg
+            class="menu-icons"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use class="cross" href="./images/icons.svg#icon-cross"></use>
+            <use class="menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="modal__button">
-            <svg class="modal__icon" width="11" height="11">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-          <form>
-            <div class="form">
-              <label class="form__text" for="name">Ім"я</label>
-              <div class="position">
-                <input
-                  class="position__input"
-                  type="text"
-                  name="name"
-                  id="name"
-                />
-                <svg class="position__icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-human"></use>
-                </svg>
+          <div class="modal__container">
+            <button data-modal-close class="modal__button">
+              <svg class="modal__icon" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form">
+              <div class="form__mini">
+                <label class="form__text" for="name">Ім"я</label>
+                <div class="position">
+                  <input
+                    class="position__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                  <svg class="position__icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-human"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="form">
-              <label class="form__text" for="tel">Телефон</label>
-              <div class="position">
-                <input
-                  class="position__input"
-                  type="tel"
-                  name="name"
-                  id="tel"
-                />
-                <svg class="position__icon" width="13" height="13">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
+              <div class="form__mini">
+                <label class="form__text" for="tel">Телефон</label>
+                <div class="position">
+                  <input
+                    class="position__input"
+                    type="tel"
+                    name="name"
+                    id="tel"
+                  />
+                  <svg class="position__icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="form">
-              <label class="form__text" for="mail">Пошта</label>
-              <div class="position">
-                <input
-                  class="position__input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                />
-                <svg class="position__icon" width="15" height="12">
-                  <use href="./images/icons.svg#icon-letter"></use>
-                </svg>
+              <div class="form__mini">
+                <label class="form__text" for="mail">Пошта</label>
+                <div class="position">
+                  <input
+                    class="position__input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
+                  <svg class="position__icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-letter"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="response">
-              <label class="response__text" for="response">Коментар</label>
-              <textarea
-                class="response__area"
-                name="response"
-                id="response"
-                cols="20"
-                rows="10"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
-            <label class="check">
-              <input class="check__agreement" type="checkbox" name="policy" />
-              <span class="check__icon"></span>
-              Погоджуюся з розсилкою та приймаю
-              <a href="@" class="check__contract"> Умови договору</a>
-            </label>
-            <button class="btn-sending" type="submit">Відправити</button>
-          </form>
+              <div class="response">
+                <label class="response__text" for="response">Коментар</label>
+                <textarea
+                  class="response__area"
+                  name="response"
+                  id="response"
+                  cols="20"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+              <label class="check">
+                <input class="check__agreement" type="checkbox" name="policy" />
+                <span class="check__icon"></span>
+                Погоджуюся з розсилкою та приймаю
+                <a href="@" class="check__contract"> Умови договору</a>
+              </label>
+              <button class="btn-sending" type="submit">Відправити</button>
+            </form>
+          </div>
         </div>
       </div>
       <section class="hero">

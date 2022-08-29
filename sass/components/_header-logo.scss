@@ -68,3 +68,22 @@
     bottom: -1px;
   }
 }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .cross {
+  display: none;
+}
+
+.menu-button.is-open .cross {
+  display: block;
+}
+.menu-button.is-open .menu {
+  display: none;
+}
