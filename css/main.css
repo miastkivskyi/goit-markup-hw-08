@@ -682,6 +682,9 @@ textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .features__list {
@@ -693,6 +696,9 @@ textarea::placeholder {
   }
 }
 
+.features__item {
+  max-width: 450px;
+}
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 30px) / 2);
