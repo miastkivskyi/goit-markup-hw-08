@@ -1029,6 +1029,8 @@ textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .footer__content {
@@ -1048,6 +1050,8 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .footer__content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 1200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1147,8 +1151,6 @@ textarea::placeholder {
 
 .join {
   width: 206px;
-  margin-left: 137px;
-  margin-right: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,6 +1298,13 @@ textarea::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .sign__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sign__form {
     -ms-flex-wrap: nowrap;
@@ -1305,6 +1314,18 @@ textarea::placeholder {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.sign__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sign__email {
