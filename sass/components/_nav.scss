@@ -2,6 +2,9 @@
   display: flex;
   margin-left: 93px;
   @extend %list;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__item:not(:last-child) {

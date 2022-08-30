@@ -3,9 +3,23 @@
   align-items: center;
   margin-left: auto;
   @extend %list;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 96px;
+  }
+}
+.communication__item {
+  align-items: flex-start;
 }
 .communication__item:first-child {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .communication__data {
   color: $primary-text-color;
