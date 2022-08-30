@@ -1,20 +1,26 @@
 .communication {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
   @extend %list;
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 96px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
   }
 }
+
 .communication__item {
-  align-items: flex-start;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-bottom: 10px;
 }
 .communication__item:first-child {
   @media screen and (min-width: 1200px) {
@@ -22,14 +28,15 @@
   }
 }
 .communication__data {
+  display: flex;
+  flex-direction: row;
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 0;
   transition-property: color;
   @extend %animation;
   &:hover {
@@ -37,5 +44,29 @@
   }
   &:focus {
     color: $logo-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.communication__envelope {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.communication__smartphone {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }
