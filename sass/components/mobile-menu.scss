@@ -12,7 +12,6 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  color: $primary-white-color;
 }
 
 .menu-container.is-open {
@@ -63,4 +62,16 @@
 .mobile-menu {
   list-style: none;
   text-decoration: none;
+}
+
+.mobile-menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.additional-info {
+  list-style: none;
 }
