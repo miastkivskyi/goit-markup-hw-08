@@ -60,6 +60,9 @@
 }
 .modal__button {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -88,9 +91,6 @@
   letter-spacing: 0.03em;
   color: $section-title-color;
   margin: 0 0 12px 0;
-}
-
-.form {
 }
 
 .form__mini {
