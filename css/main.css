@@ -606,13 +606,17 @@
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  max-width: 360px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin-bottom: 30px;
   color: #ffffff;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.4;
   }
@@ -961,7 +965,7 @@ textarea::placeholder {
 
 .check__icon {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -1683,7 +1687,7 @@ textarea::placeholder {
 }
 
 .sign__email {
-  width: calc(100% - 30px);
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -1695,7 +1699,7 @@ textarea::placeholder {
   color: #757575;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .sign__email {
     width: 450px;
   }

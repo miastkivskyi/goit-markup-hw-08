@@ -29,13 +29,15 @@
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  max-width: 360px;
+  min-width: min-content;
   margin-bottom: 30px;
   @extend %text-margin;
   color: $primary-white-color;
   text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.4;
   }
