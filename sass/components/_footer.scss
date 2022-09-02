@@ -12,18 +12,17 @@
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
     flex-direction: row;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
     width: 1200px;
     justify-content: center;
     align-items: baseline;
-    flex-direction: row;
   }
 }
 
@@ -41,7 +40,7 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: block;
   }
 }
@@ -53,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 231px;
     display: block;
     margin-top: 20px;
@@ -99,11 +98,11 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 0px;
     margin-left: 165px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -168,7 +167,7 @@
   margin-top: 60px;
   margin-left: 0px;
   flex-direction: column;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: flex-start;
     margin-left: 93px;
     margin-top: 0;
@@ -185,13 +184,11 @@
 .sign__form {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     align-items: center;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
     flex-direction: row;
   }
@@ -213,10 +210,10 @@
   background-color: $background-color;
   color: $primary-text-color;
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) {
+  @include mob {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0px;
     width: 358px;
   }
@@ -241,7 +238,7 @@
   border-radius: 4px;
   letter-spacing: 0.06em;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 12px;
   }
 }

@@ -1,27 +1,60 @@
 .hero {
-  max-width: 480px;
-  background-color: $background-color;
+  max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/other-pictures/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/other-pictures/hero1x-mob.jpg");
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/other-pictures/hero1x-mob.jpg");
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/other-pictures/hero1x-tabl.jpg");
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/other-pictures/hero2x-tabl.jpg");
+    }
   }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/other-pictures/hero1x-desk.jpg");
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/other-pictures/hero2x-desk.jpg");
+    }
+  }
+}
+
+.hero__container {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 .hero__title {
   display: inline-block;
@@ -36,7 +69,7 @@
   color: $primary-white-color;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.4;
@@ -60,7 +93,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 216px;
   }
 }

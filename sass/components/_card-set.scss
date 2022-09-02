@@ -5,10 +5,10 @@
   list-style: none;
   padding-left: 0;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: -30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: -30px;
     margin-bottom: 0px;
   }
@@ -19,25 +19,25 @@
   max-width: 450px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 0px;
   }
 }
 .card-set__element:last-child {
-  @media screen and (min-width: 480px) {
+  @include mob {
     margin-bottom: 0px;
   }
 }
 .card-set__element:nth-child(3n) {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 0px;
   }
 }

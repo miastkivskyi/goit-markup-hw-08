@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -29,11 +29,11 @@
   row-gap: 15px;
   @extend %list;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     row-gap: 15px;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: center;
     margin-bottom: 50px;
   }

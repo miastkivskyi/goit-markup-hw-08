@@ -3,11 +3,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: column;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -23,7 +23,7 @@
   padding-bottom: 10px;
 }
 .communication__item:first-child {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 50px;
   }
 }
@@ -45,7 +45,7 @@
   &:focus {
     color: $logo-color;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -57,7 +57,7 @@
 .communication__envelope {
   width: 14px;
   height: 10px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 16px;
     height: 12px;
   }
@@ -65,7 +65,7 @@
 .communication__smartphone {
   width: 10px;
   height: 14px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 10px;
     height: 16px;
   }

@@ -5,10 +5,10 @@
   padding-right: 15px;
   margin-top: 60px;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
     padding-top: 94px;
     margin-bottom: 0px;
@@ -23,7 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     flex-wrap: nowrap;
   }
@@ -31,19 +31,19 @@
 
 .features__item {
   max-width: 450px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
   &:nth-child(2n) {
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-right: 0px;
     }
   }
 }
 
 .features__item:not(:last-child) {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 30px;
   }
 }
@@ -55,7 +55,7 @@
   margin-bottom: 30px;
   @extend %flex;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 270px;
   }
 }
@@ -77,7 +77,7 @@
   @extend %text-margin;
   color: $primary-text-color;
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0px;
   }
 }

@@ -6,7 +6,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -20,7 +20,7 @@
   @extend %font-title;
   @extend %text-margin;
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
   }
 }
@@ -36,10 +36,10 @@
 .customers__item {
   width: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 2 * 30px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 5 * 30px) / 6);
   }
 }
