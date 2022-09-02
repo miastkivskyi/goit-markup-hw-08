@@ -1,7 +1,6 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
   padding-left: 0;
   width: 100%;
@@ -16,7 +15,7 @@
 
 .card-set__element {
   width: 100%;
-  max-width: 450px;
+  max-width: 402px;
   margin-bottom: 30px;
 
   @include tablet {
@@ -87,6 +86,12 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.thumb__img {
+  width: 100%;
+  display: block;
+  height: 100%;
 }
 .thumb-element__text {
   position: absolute;

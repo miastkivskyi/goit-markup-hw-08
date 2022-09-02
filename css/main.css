@@ -80,7 +80,7 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.datalist, .join__list, .footer__list, .customers__list, .network, .team__list, .examples__list, .social-networks, .additional-info__item, .mobile-menu, .communication, .nav {
+.datalist, .join__list, .footer__list, .customers__list, .network, .team__list, .examples__list, .social-networks__item, .social-networks, .additional-info__item, .mobile-menu, .communication, .nav {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
@@ -555,19 +555,22 @@
   display: flex;
   text-decoration: none;
   margin-top: 64px;
+  gap: 5px;
 }
 
 .social-networks__item {
   color: #2196f3;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  text-decoration: none;
-  padding-right: 10px;
+  font-size: 14px;
+  padding-right: 5px;
 }
-
-.social-networks__list {
-  margin-right: 10px;
+@media screen and (min-width: 480px) {
+  .social-networks__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    padding-right: 10px;
+  }
 }
 
 .social-networks__list:not(:last-child) {
@@ -1764,6 +1767,7 @@ textarea::placeholder {
 }
 
 .portfolio {
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
@@ -1773,6 +1777,16 @@ textarea::placeholder {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    max-width: 1200px;
   }
 }
 
@@ -1796,18 +1810,18 @@ textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 8px;
   margin-bottom: 40px;
-  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .datalist {
-    row-gap: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1820,13 +1834,12 @@ textarea::placeholder {
 }
 
 .datalist__button {
-  display: inline-block;
   color: #212121;
   background-color: #f5f4fa;
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  padding: 6px 22px;
+  padding: 4px 22px;
   text-align: center;
   -webkit-transition-property: background-color, color, -webkit-box-shadow;
   transition-property: background-color, color, -webkit-box-shadow;
@@ -1854,9 +1867,6 @@ textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style: none;
   padding-left: 0;
   width: 100%;
@@ -1875,7 +1885,7 @@ textarea::placeholder {
 
 .card-set__element {
   width: 100%;
-  max-width: 450px;
+  max-width: 402px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1959,6 +1969,12 @@ textarea::placeholder {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.thumb__img {
+  width: 100%;
+  display: block;
+  height: 100%;
 }
 
 .thumb-element__text {

@@ -142,19 +142,23 @@
   text-decoration: none;
   @extend %list;
   margin-top: 64px;
+  gap: 5px;
 }
 
 .social-networks__item {
   color: $logo-color;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  text-decoration: none;
-  padding-right: 10px;
+  font-size: 14px;
+  padding-right: 5px;
+  @extend %list;
+  @include mob {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    padding-right: 10px;
+  }
 }
-.social-networks__list {
-  margin-right: 10px;
-}
+
 .social-networks__list:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
