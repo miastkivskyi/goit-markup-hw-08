@@ -40,6 +40,7 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
   @include desktop {
     display: block;
   }
@@ -51,11 +52,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
   @include desktop {
     width: 231px;
     display: block;
-    margin-top: 20px;
     margin-bottom: 0px;
   }
 }
@@ -75,7 +74,6 @@
 }
 .footer__local {
   display: inline-block;
-  margin-top: 20px;
   color: $primary-white-color;
   text-decoration: none;
   @extend %font-text;
@@ -98,9 +96,11 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
+  margin-top: 60px;
   @include tablet {
     margin-right: 0px;
     margin-left: 165px;
+    margin-top: 0px;
   }
   @include desktop {
     display: flex;
@@ -109,6 +109,7 @@
     flex-direction: row;
     margin-left: 70px;
     margin-right: 0px;
+    margin-top: 0px;
   }
 }
 
