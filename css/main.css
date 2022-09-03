@@ -590,8 +590,8 @@
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/other-pictures/hero1x-mob.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/other-pictures/hero1x-mob.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/other-pictures/hero2x-mob.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/other-pictures/hero2x-mob.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -1979,8 +1979,8 @@ textarea::placeholder {
 
 .thumb__img {
   width: 100%;
-  display: block;
   height: 100%;
+  display: block;
 }
 
 .thumb-element__text {
